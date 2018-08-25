@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>
+Login page
+</title>
+</head>
+<h1 style="font-family:"Times New Roman";text-align="center";font-size:20pt;
+color:#00FF00;>
+Login Page
+</h1>
+<body>
+<p>
+Please enter your name and numeric code in the boxes provided and hit login.
+</p>
+</body>
+<form name="login">
+ Your name &emsp;  <input type="text" name="userid"/>
+<br>
+Numeric code <input type="password" name="pswrd"/>
+<input type="button" onclick="check(this.form)" value="Login"/>
+<input type="reset" value="Cancel"/>
+</form>
+<script language="javascript">
+function check(form)/*function to check if userid matches number*/
+{
+ 
+ if( form.pswrd.value == localStorage.getItem(form.userid.value))
+  {
+	window.open('target.html')/*opens the target page if it matches */
+	localStorage.setItem('secretID',form.userid.value);
+  }
+ else
+ {
+   alert("Error, number and name do not match")/*displays warning if incorrect*/
+  }
+}
+</script>
+</body>
+</html>
+

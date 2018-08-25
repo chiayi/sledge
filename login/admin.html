@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>
+Admin Page
+</title>
+</head>
+<h1 style="font-family:"Times New Roman";text-align="center";font-size:20pt;
+color:#00FF00;>
+Admin's Page
+</h1>
+<form name="Set Data">
+Please enter the judge's name &emsp; &emsp;&emsp; <input type="text" name="userid"/>
+<br>
+Please enter the desired numeric code <input type="password" name="pswrd"/>
+<input type="button" onclick="check(this.form)" value="Set Data"/>
+<input type="reset" value="Cancel"/>
+</form>
+<script language = "javascript">
+
+function check(form)/*function to check if userid matches number*/
+{
+ localStorage.setItem(form.userid.value,form.pswrd.value);
+}
+</script>
+</html>

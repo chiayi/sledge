@@ -1,0 +1,19 @@
+Eric- I still am unsure on how the general project works together quite yet in this folder I made 2 html files,
+"loginpage.html"
+and
+"admin.html"
+
+loginpage.html - has a basic script to handle logins, once it receives the correct combination as input it sends the judge to a page (I did not know where to send them so it just
+sends them to target.html) which should tell them where they should go 
+
+admin.html - has a basic script for admins to take in input and store a secretID for them to log in with - will likely not be needed in the future as I believe we already
+have some sort of system set up to add judges/store their data somehow, all I would need to be able to do is gather that data from login.html
+
+
+Being unaware on how the general project works, I was unaware how to fully implement these functions into the project. That being said, these files are still not styled/do not
+follow the guidelines set forth for the project yet.
+
+If you have time in the future could we possibly set up some sort of meeting to discuss/have you further explain how the general project works? In the meantime I will attempt to 
+learn more about node.js and the other pieces of the project.
+
+--Kirollos 
